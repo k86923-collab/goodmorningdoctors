@@ -25,6 +25,22 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.93);backdro
 .navlinks{display:flex;gap:26px;font-size:14.5px;font-weight:600;color:var(--muted)}
 .navlinks a:hover{color:var(--navy)}
 .navlinks a.active{color:var(--navy);font-weight:800}
+/* dropdown */
+.navlinks .drop{position:relative;display:flex;align-items:center;height:66px}
+.navlinks .drop>a::after{content:"▾";font-size:10px;margin-left:4px;color:var(--muted)}
+.navlinks .menu{position:absolute;top:52px;left:0;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 30px rgba(31,56,100,.12);padding:8px;min-width:180px;display:none;z-index:60}
+.navlinks .drop:hover .menu{display:block}
+.navlinks .menu a{display:block;padding:9px 12px;border-radius:8px;font-size:14px;color:var(--muted);white-space:nowrap;font-weight:600}
+.navlinks .menu a:hover{background:var(--sky);color:var(--navy)}
+.navlinks .drop.nomenu>a::after{content:none}
+.navlinks .menu.cols{min-width:320px}
+.navlinks .drop:hover .menu.cols{display:grid;grid-template-columns:1fr 1fr;gap:0}
+/* specialty cards (병원찾기) */
+.speccards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:8px}
+@media(max-width:760px){.speccards{grid-template-columns:repeat(2,1fr)}}
+.speccard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 14px;text-align:center;font-weight:700;color:var(--navy);font-size:15px;transition:.15s}
+.speccard:hover{background:var(--sky);border-color:var(--blue)}
+.speccard .n{display:block;font-size:11.5px;color:var(--muted);font-weight:500;margin-top:4px}
 .navr{display:flex;align-items:center;gap:14px}
 .lang{font-size:13px;color:var(--muted);font-weight:600;border:1px solid var(--line);padding:6px 10px;border-radius:8px}
 @media(max-width:860px){.navlinks{display:none}}

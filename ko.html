@@ -12,14 +12,40 @@
   <div class="wrap nav">
     <div class="brand"><span class="sun"></span> 굿모닝닥터스</div>
     <nav class="navlinks">
-      <a href="ko.html" class="active">홈</a>
-      <a href="ko-find.html">병원찾기</a>
-      <a href="ko-treatments.html">시술·수술</a>
-      <a href="ko-reviews.html">후기</a>
+      <div class="drop">
+        <a href="ko.html" class="active">홈</a>
+        <div class="menu">
+          <a href="ko.html#about">굿모닝닥터스 소개</a>
+          <a href="ko.html#promise">검증기준</a>
+          <a href="ko.html#reviews">후기</a>
+        </div>
+      </div>
+      <div class="drop">
+        <a href="ko-specialty.html">진료과목으로 찾기</a>
+        <div class="menu cols">
+          <a href="ko-specialty.html">내과</a><a href="ko-specialty.html">외과</a>
+          <a href="ko-specialty.html">소아과</a><a href="ko-specialty.html">산부인과</a>
+          <a href="ko-specialty.html">이비인후과</a><a href="ko-specialty.html">안과</a>
+          <a href="ko-specialty.html">피부과</a><a href="ko-specialty.html">성형외과</a>
+          <a href="ko-specialty.html">비뇨기과</a><a href="ko-specialty.html">정형외과</a>
+          <a href="ko-specialty.html">재활의학과</a><a href="ko-specialty.html">치과</a>
+        </div>
+      </div>
+      <div class="drop nomenu"><a href="ko-find.html">지도로 찾기</a></div>
+      <div class="drop">
+        <a href="ko-treatments.html">시술·수술로 찾기</a>
+        <div class="menu">
+          <a href="ko-treatments.html">피부과 시술</a>
+          <a href="ko-treatments.html">성형수술</a>
+          <a href="ko-treatments.html">안과수술</a>
+          <a href="ko-treatments.html">이비인후과수술</a>
+          <a href="ko-treatments.html">치과시술</a>
+        </div>
+      </div>
     </nav>
     <div class="navr">
       <a class="lang" href="index.html">🌐 English</a>
-      <a href="ko-find.html" class="btn btn-primary btn-sm">병원 찾기</a>
+      <a href="ko-specialty.html" class="btn btn-primary btn-sm">병원 찾기</a>
     </div>
   </div>
 </header>
@@ -28,10 +54,10 @@
   <div class="wrap">
     <span class="hero-badge">★ 검증된 정직한 병원만</span>
     <h1>믿을 수 있는 병원을,<br>지도에서 바로 찾으세요.</h1>
-    <p class="sub">실력과 정직함이 검증된 병원만 모았습니다. 내 주변 검증 병원을 지도로 확인하고, 진짜 후기까지 한눈에.</p>
+    <p class="sub">실력과 정직함이 검증된 병원만 모았습니다. 진료과·지도·시술로 내 주변 검증 병원을 찾고, 진짜 후기까지 한눈에.</p>
     <div class="cta">
-      <a href="ko-find.html" class="btn btn-primary">병원 찾기</a>
-      <a href="ko-treatments.html" class="btn btn-ghost">시술·수술 둘러보기</a>
+      <a href="ko-specialty.html" class="btn btn-primary">진료과목으로 찾기</a>
+      <a href="ko-find.html" class="btn btn-ghost">지도로 찾기</a>
     </div>
     <div class="tagline">“언제나 당신과 함께 — With you, every step.”</div>
   </div>
@@ -39,8 +65,15 @@
 
 <div class="mission"><div class="wrap">정직하게 진료하는 <b>좋은 병원</b>이 편법 없이 정당하게 성장하는 구조를 만듭니다.</div></div>
 
-<!-- 검증기준 (홈 안 섹션) -->
-<section class="sec" id="promise">
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="eyebrow">굿모닝닥터스 소개</div>
+    <h2 class="title">의사가 만든, 병원의 편에 선 플랫폼.</h2>
+    <p class="lead" style="max-width:760px">대부분의 의료 플랫폼은 환자만 바라봅니다. 하지만 정직하게 진료에 충실한 좋은 병원은 오히려 성장하기 어렵습니다. 병원을 운영하는 의사로서, 우리는 편법 없이 제대로 진료하는 병원이 정당하게 알려지고 성장하도록 돕습니다. 검증된 좋은 병원만 선별해 환자와 잇는 것 — 그것이 굿모닝닥터스입니다.</p>
+  </div>
+</section>
+
+<section class="sec" id="promise" style="padding-top:0">
   <div class="wrap">
     <div class="eyebrow">검증 기준</div>
     <h2 class="title">모든 병원은 자격을 증명해야 합니다.</h2>
@@ -59,7 +92,6 @@
   </div>
 </section>
 
-<!-- 병원찾기 teaser -->
 <section class="sec" style="padding-top:0">
   <div class="wrap">
     <div class="teaser">
@@ -67,8 +99,29 @@
         <h3>내 주변 검증된 병원을 지도에서</h3>
         <p>진료과를 고르면 검증 기준을 통과한 병원만 지도에 표시됩니다. 외부 별점이 아닌, 우리 플랫폼 검증 후기만.</p>
       </div>
-      <a href="ko-find.html" class="btn" style="background:#fff;color:var(--navy)">병원 찾기</a>
+      <a href="ko-find.html" class="btn" style="background:#fff;color:var(--navy)">지도로 찾기</a>
     </div>
+  </div>
+</section>
+
+<section class="sec" id="reviews" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">후기</div>
+    <h2 class="title">검증된 환자의 진짜 후기</h2>
+    <div class="rvnote" style="margin-top:16px">✓ 실제 이용한 검증 환자만 작성 · 병원이 답변할 수 있어요 · 사용자 댓글 없음 · 부적절한 후기는 신고 가능 (욕설·비하는 순화, 내용은 그대로 보존)</div>
+    <div class="review">
+      <div class="top"><span class="stars" style="color:#F2A93B">★★★★★</span><span class="who">김○○ · 피부 시술 · ○○의원</span></div>
+      <p>상담부터 시술까지 대표원장님이 직접 봐주셨어요. 가격도 미리 서면으로 받아서 추가 비용 걱정이 없었습니다.</p>
+      <div class="reply"><div class="h">🏥 병원 답변</div><p>소중한 후기 감사합니다. 앞으로도 투명한 진료로 보답하겠습니다.</p></div>
+      <div class="report">· 신고하기</div>
+    </div>
+    <div class="review">
+      <div class="top"><span class="stars" style="color:#F2A93B">★★★★☆</span><span class="who">이○○ · 건강검진 · △△의원</span></div>
+      <p>검진 결과 설명이 조금 빨라서 아쉬웠지만, 재검 안내와 사후 연락은 꼼꼼했습니다.</p>
+      <div class="reply"><div class="h">🏥 병원 답변</div><p>설명이 충분치 못했던 점 죄송합니다. 결과 상담 시간을 늘려 개선하겠습니다.</p></div>
+      <div class="report">· 신고하기</div>
+    </div>
+    <div style="margin-top:18px"><a href="ko-reviews.html" class="btn btn-ghost">후기 더보기</a></div>
   </div>
 </section>
 
@@ -77,8 +130,8 @@
     <h2>정직한 좋은 병원, 지도에서 바로.</h2>
     <p>편법 없이 진료에 충실한 병원을 찾고 계신가요?</p>
     <div class="cta">
-      <a href="ko-find.html" class="btn btn-primary">병원 찾기</a>
-      <a href="ko-reviews.html" class="btn btn-ghost">실제 후기 보기</a>
+      <a href="ko-specialty.html" class="btn btn-primary">진료과목으로 찾기</a>
+      <a href="ko-find.html" class="btn btn-ghost">지도로 찾기</a>
     </div>
   </div>
 </section>
@@ -88,17 +141,13 @@
     <div class="cols">
       <div>
         <div class="brand" style="font-size:17px;font-weight:800">🌅 굿모닝닥터스</div>
-        <div class="reg">
-          운영: 주식회사 정진<br>
-          검증된 병원 정보 제공 플랫폼<br>
-          사업자등록번호 [•] · 대한민국 서울
-        </div>
+        <div class="reg">운영: 주식회사 정진<br>검증된 병원 정보 제공 플랫폼<br>사업자등록번호 [•] · 대한민국 서울</div>
       </div>
       <div>
         <div style="color:#fff;font-weight:700;margin-bottom:8px">서비스</div>
-        <div><a href="ko-find.html">병원찾기</a></div>
-        <div><a href="ko-treatments.html">시술·수술</a></div>
-        <div><a href="ko-reviews.html">후기</a></div>
+        <div><a href="ko-specialty.html">진료과목으로 찾기</a></div>
+        <div><a href="ko-find.html">지도로 찾기</a></div>
+        <div><a href="ko-treatments.html">시술·수술로 찾기</a></div>
       </div>
       <div>
         <div style="color:#fff;font-weight:700;margin-bottom:8px">법적 고지</div>
@@ -112,9 +161,7 @@
         <div style="margin-top:4px;font-size:12px;color:#6f83a3">기타: 러시아어·태국어·인도네시아어·베트남어·아랍어(자동번역)</div>
       </div>
     </div>
-    <div class="note">
-      굿모닝닥터스는 검증된 국내 의료기관의 정보를 제공합니다. 의료 서비스는 독립된 면허 의료기관이 제공하며, 진료·시술의 판단과 결과는 담당 의료진이 결정합니다. 국내 서비스는 정보 제공 목적이며 진료 소개·알선 수수료를 받지 않습니다. © 2026 주식회사 정진.
-    </div>
+    <div class="note">굿모닝닥터스는 검증된 국내 의료기관의 정보를 제공합니다. 의료 서비스는 독립된 면허 의료기관이 제공하며, 진료·시술의 판단과 결과는 담당 의료진이 결정합니다. 국내 서비스는 정보 제공 목적이며 진료 소개·알선 수수료를 받지 않습니다. © 2026 주식회사 정진.</div>
   </div>
 </footer>
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>병원찾기 — 굿모닝닥터스</title>
+<title>지도로 찾기 — 굿모닝닥터스</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,26 +12,52 @@
   <div class="wrap nav">
     <div class="brand"><span class="sun"></span> 굿모닝닥터스</div>
     <nav class="navlinks">
-      <a href="ko.html">홈</a>
-      <a href="ko-find.html" class="active">병원찾기</a>
-      <a href="ko-treatments.html">시술·수술</a>
-      <a href="ko-reviews.html">후기</a>
+      <div class="drop">
+        <a href="ko.html">홈</a>
+        <div class="menu">
+          <a href="ko.html#about">굿모닝닥터스 소개</a>
+          <a href="ko.html#promise">검증기준</a>
+          <a href="ko.html#reviews">후기</a>
+        </div>
+      </div>
+      <div class="drop">
+        <a href="ko-specialty.html">진료과목으로 찾기</a>
+        <div class="menu cols">
+          <a href="ko-specialty.html">내과</a><a href="ko-specialty.html">외과</a>
+          <a href="ko-specialty.html">소아과</a><a href="ko-specialty.html">산부인과</a>
+          <a href="ko-specialty.html">이비인후과</a><a href="ko-specialty.html">안과</a>
+          <a href="ko-specialty.html">피부과</a><a href="ko-specialty.html">성형외과</a>
+          <a href="ko-specialty.html">비뇨기과</a><a href="ko-specialty.html">정형외과</a>
+          <a href="ko-specialty.html">재활의학과</a><a href="ko-specialty.html">치과</a>
+        </div>
+      </div>
+      <div class="drop nomenu"><a href="ko-find.html" class="active">지도로 찾기</a></div>
+      <div class="drop">
+        <a href="ko-treatments.html">시술·수술로 찾기</a>
+        <div class="menu">
+          <a href="ko-treatments.html">피부과 시술</a>
+          <a href="ko-treatments.html">성형수술</a>
+          <a href="ko-treatments.html">안과수술</a>
+          <a href="ko-treatments.html">이비인후과수술</a>
+          <a href="ko-treatments.html">치과시술</a>
+        </div>
+      </div>
     </nav>
     <div class="navr">
       <a class="lang" href="index.html">🌐 English</a>
-      <a href="#find" class="btn btn-primary btn-sm">병원 찾기</a>
+      <a href="ko-specialty.html" class="btn btn-primary btn-sm">진료과 찾기</a>
     </div>
   </div>
 </header>
 
 <section class="pagehero">
   <div class="wrap">
-    <h1>병원 찾기</h1>
-    <p>진료과를 고르면 검증 기준을 통과한 병원만 지도에 표시됩니다. 외부 별점·리뷰가 아닌, 우리 플랫폼 검증 후기만 노출됩니다.</p>
+    <h1>지도로 찾기</h1>
+    <p>내 주변 검증된 병원을 지도에서 바로 확인하세요. 진료과를 고르면 검증 기준을 통과한 병원만 표시됩니다.</p>
   </div>
 </section>
 
-<section class="sec" id="find">
+<section class="sec find" id="find">
   <div class="wrap">
     <div class="filters">
       <span class="chip2 on">전체</span>
@@ -60,10 +86,8 @@
           <div class="rv">“대표원장님이 직접 봐주시고, 내국인과 같은 가격이라 믿음이 갔어요.”</div>
           <div class="tags"><span class="tag">정품 재료</span><span class="tag">동일 가격</span><span class="tag">응급 대비</span></div>
           <div class="acts">
-            <a class="p" href="#">상세보기</a>
-            <a href="#">문의</a>
-            <a href="#">네이버 길찾기</a>
-            <a href="#">카카오 길찾기</a>
+            <a class="p" href="#">상세보기</a><a href="#">문의</a>
+            <a href="#">네이버 길찾기</a><a href="#">카카오 길찾기</a>
           </div>
         </div>
         <div class="clinic">
@@ -75,10 +99,8 @@
           <div class="rv">“검진 결과 설명이 자세하고 사후 연락까지 꼼꼼했습니다.”</div>
           <div class="tags"><span class="tag">동일 가격</span><span class="tag">사후관리</span></div>
           <div class="acts">
-            <a class="p" href="#">상세보기</a>
-            <a href="#">문의</a>
-            <a href="#">네이버 길찾기</a>
-            <a href="#">카카오 길찾기</a>
+            <a class="p" href="#">상세보기</a><a href="#">문의</a>
+            <a href="#">네이버 길찾기</a><a href="#">카카오 길찾기</a>
           </div>
         </div>
       </div>
@@ -95,9 +117,9 @@
       </div>
       <div>
         <div style="color:#fff;font-weight:700;margin-bottom:8px">서비스</div>
-        <div><a href="ko-find.html">병원찾기</a></div>
-        <div><a href="ko-treatments.html">시술·수술</a></div>
-        <div><a href="ko-reviews.html">후기</a></div>
+        <div><a href="ko-specialty.html">진료과목으로 찾기</a></div>
+        <div><a href="ko-find.html">지도로 찾기</a></div>
+        <div><a href="ko-treatments.html">시술·수술로 찾기</a></div>
       </div>
       <div>
         <div style="color:#fff;font-weight:700;margin-bottom:8px">법적 고지</div>
